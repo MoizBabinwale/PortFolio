@@ -46,21 +46,21 @@ function UserList() {
         var userId = item.userId
         var password = item.password
         var id = item.id
+        const requestOptions = JSON.stringify({
+            userType,
+            userName,
+            mobileNumber,
+            emailId,
+            userId,
+            password,
+            id
+        })
+        const headers = {
+            'Content-Type': 'application/json',
+            'zoneid': 'Asia/Kolkata',
+        };
         try {
-            const requestOptions = JSON.stringify({
-                userType,
-                userName,
-                mobileNumber,
-                emailId,
-                userId,
-                password,
-                id
-            })
-            const headers = {
-                'Content-Type': 'application/json',
-                'zoneid': 'Asia/Kolkata',
-            };
-            const response = await axios.post(userUpdate, requestOptions, { headers })
+            const response = await axios.put(userUpdate, requestOptions, { headers })
             console.log("response ", response);
         } catch (error) {
             console.log("error ", error);
