@@ -46,6 +46,14 @@ export default function UploadFile() {
         console.log('Uploading...');
     };
     return (
-        <div>upload file</div>
+        <div className='col-12 col-lg-12 ol-sm-12 d-flex justify-content-center ailgn-item-center'>
+            <div className="upload-container">
+                <form action="/upload" method="post" enctype="multipart/form-data" className="upload-form">
+                    <label for="file-upload">Select a file to upload:</label>
+                    <input type="file" id="file-upload" name="fileToUpload" />
+                    <button type="submit" className="upload-button mt-3 ">Upload</button>
+                </form>
+            </div>
+        </div>
     )
 }

@@ -224,3 +224,54 @@ nav img {
     padding: 15px;
   }
 }
+.maualUpload{
+  width: 70%;
+}
+@media screen and (max-width: 768px) {
+  .maualUpload{
+    width:80%;
+    padding: 15px;
+  }
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.upload-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  padding: 10px;
+}
+
+.upload-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.upload-form label {
+  margin-bottom: 10px;
+}
+
+
+.upload-button {
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.upload-button:hover {
+  background-color: #333;
+}
+
+@media screen and (max-width: 768px) {
+  .upload-container {
+      flex-direction: column;
+  }
+}
