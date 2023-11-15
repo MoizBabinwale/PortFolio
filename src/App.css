@@ -4,6 +4,25 @@
   flex-direction: column;
 }
 
+.rotate-container {
+  display: inline-block;
+  /* To contain the image and control its rotation */
+  animation: rotate 10s linear infinite;
+  /* Adjust the duration (10s) for slower or faster rotation */
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+    /* Start rotation at 0 degrees */
+  }
+
+  to {
+    transform: rotate(360deg);
+    /* End rotation at 360 degrees (a full rotation) */
+  }
+}
+
 /* CSS for the navbar */
 nav {
   display: flex;
@@ -207,29 +226,34 @@ nav img {
   0% {
     background-position: 0% 50%;
   }
+
   50% {
     background-position: 100% 50%;
   }
+
   100% {
     background-position: 0% 50%;
   }
 }
 
-.background-animation{
+.background-animation {
   width: 50%;
 }
+
 @media screen and (max-width: 768px) {
-  .background-animation{
-    width:80%;
+  .background-animation {
+    width: 80%;
     padding: 15px;
   }
 }
-.maualUpload{
+
+.maualUpload {
   width: 70%;
 }
+
 @media screen and (max-width: 768px) {
-  .maualUpload{
-    width:80%;
+  .maualUpload {
+    width: 80%;
     padding: 15px;
   }
 }
@@ -272,6 +296,6 @@ body {
 
 @media screen and (max-width: 768px) {
   .upload-container {
-      flex-direction: column;
+    flex-direction: column;
   }
 }
