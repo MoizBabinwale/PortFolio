@@ -19,9 +19,26 @@ import stack2 from "./assets/stack2.PNG"
 import { BiLogoMongodb } from "react-icons/bi";
 import { FaNodeJs } from "react-icons/fa";
 import { FaReact } from "react-icons/fa";
+import Slider from './Slider';
 
 function Body() {
 
+    const medicineImg = [
+        medicine,
+        medicine1,
+        medicine2,
+        medicine3,
+    ]
+    const mechanicImg = [
+        mechanic1,
+        mechanic2,
+        mechanic4,
+        mechanic5,
+    ]
+    const stackImg = [
+        stack1,
+        stack2
+    ]
     return (
         <div className='pl-4 pr-4'>
             <Element name="home" className="element">
@@ -33,7 +50,7 @@ function Body() {
                     </div>
                 </div>
             </Element>
-            <p className='text-center items-center mb-4'>Hi, I'm Moiz. A passionate MERN Developer based in Nagpur, Maharashtra. 📍</p>
+            <p className='text-center items-center mb-4'>Hi, I'm Moiz. A passionate MERN Developer based in Gondia, Maharashtra. 📍</p>
             <span className='flex mb-4 flex-row font-bold text-3xl justify-center gap-4'>
                 <a href='https://github.com/MoizBabinwale' target="_blank" rel="noreferrer" >   <AiOutlineGithub /></a>
                 <a href='https://www.linkedin.com/in/moiz-babinwale-its515253/' target="_blank" rel="noreferrer" ><AiOutlineLinkedin /></a>
@@ -72,7 +89,7 @@ function Body() {
                     </div>
                     <div className=" flex flex-col text-center  justify-center  max-w-[54rem] md:items-start md:text-start">
                         <h3 className='font-semibold text-cyan-600 text-2xl  mt-4 mb-3 md:text-start '>About me</h3>
-                        <h4 className=' text-2xl mb-3 font-bold w-100 md:text-start '>A dedicated MERN Developer <br /> based in Nagpur, Maharashtra 📍</h4>
+                        <h4 className=' text-2xl mb-3 font-bold w-100 md:text-start '>A dedicated MERN Developer <br /> based in Gondia, Maharashtra 📍</h4>
                         <p className='font-light  text-[#767676] self-center w-96  md:text-start'>As a Junior Full Stack Developer, I possess an impressive arsenal of skills in HTML, CSS, JavaScript, React, and Tailwind. I excel in designing and maintaining responsive websites that offer a smooth user experience. My expertise lies in crafting dynamic, engaging interfaces through writing clean and optimized code and utilizing cutting-edge development tools and techniques. I am also a team player who thrives in collaborating with cross-functional teams to produce outstanding web applications.</p>
                     </div>
                 </div>
@@ -81,62 +98,49 @@ function Body() {
                 <div className='flex flex-col text-center  justify-center text-side max-w-[54rem] md:text-center md:max-w-none    md:justify-center'>
                     <p className=' font-semibold text-cyan-600 text-2xl  mt-4 mb-3 '>portfolio</p>
                     <h3 className='  mb-3  font-bold w-100 text-4xl '>Each project is a unique piece of development 🧩</h3>
-                    <div className='card p-2 w-fit shadow-xl border-none self-center hover:-translate-y-2 transition-transform duration-300 ease-in-out m-2'>
+                    <div className='card p-2 w-fit border-none   shadow-xl self-center hover:-translate-y-2 transition-transform duration-300 ease-in-out mt-3 m-2'>
                         <div className='flex md:w-[800px] justify-start flex-col md:flex-row md:gap-4'>
-                            <div className='image p-1 grid grid-cols-2  gap-2 md:h-[25px] h-[250px]'>
-                                <img className='' src={medicine} alt='logo' />
-                                <img className='' src={medicine1} alt='logo' />
-                                <img className='' src={medicine2} alt='logo' />
-                                <img className='' src={medicine3} alt='logo' />
+                            <div className='image p-1  gap-2  '>
+                                <Slider slides={medicineImg} />
                             </div>
                             <div className='mt-2 w-90'>
-
                                 <h3 className='font-bold text-black text-left'>  Medicine Prescription Management System:  </h3>
-                                <p className='font-medium text-left mt-1'> This dynamic web application empowers administrators to seamlessly add medicines along with associated symptoms. The user-friendly interface facilitates efficient prescription management, streamlining the process for healthcare professionals. The responsive design ensures accessibility across various devices, providing a modern solution for medicine administration and record-keeping</p>
+                                <p className='font-medium mt-1 text-justify'> This dynamic web application empowers administrators to seamlessly add medicines along with associated symptoms. The user-friendly interface facilitates efficient prescription management, streamlining the process for healthcare professionals. The responsive design ensures accessibility across various devices, providing a modern solution for medicine administration and record-keeping</p>
                             </div>
                         </div>
                     </div>
                     <div className='card p-2 w-fit border-none   shadow-xl self-center hover:-translate-y-2 transition-transform duration-300 ease-in-out mt-3 m-2'>
                         <div className='flex md:w-[800px] justify-start flex-col md:flex-row md:gap-4'>
-                            <div className='image p-1 grid grid-cols-2  gap-2  '>
-                                <img className='' src={mechanic1} alt='logo' />
-                                <img className='' src={mechanic2} alt='logo' />
-                                <img className='' src={mechanic4} alt='logo' />
-                                <img className='' src={mechanic5} alt='logo' />
+                            <div className='image p-1  gap-2  '>
+                                <Slider slides={mechanicImg} />
                             </div>
                             <div className='mt-2 w-90'>
-
                                 <h3 className='font-bold text-black text-left'>Mechanic Shop Directory:  </h3>
-                                <p className='font-medium text-left mt-1'> In this clone, users can explore mechanic shop details, including contact information, and effortlessly reach out to mechanics for services. On the mechanic side, the platform allows easy registration of different shop branches, providing a comprehensive directory for users seeking automotive services. The responsive design ensures optimal user experience, making it a reliable and accessible solution for connecting users with automotive professionals.</p>
+                                <p className='font-medium mt-1 text-justify'> In this clone, users can explore mechanic shop details, including contact information, and effortlessly reach out to mechanics for services. On the mechanic side, the platform allows easy registration of different shop branches, providing a comprehensive directory for users seeking automotive services. The responsive design ensures optimal user experience, making it a reliable and accessible solution for connecting users with automotive professionals.</p>
                             </div>
                         </div>
                     </div>
-                    <div className='card p-2 w-fit border-none   shadow-xl self-center hover:-translate-y-2 transition-transform duration-300 ease-in-out mt-3 m-2 hover:cursor-pointer'>
+                    <div className='card p-2 w-fit border-none   shadow-xl self-center hover:-translate-y-2 transition-transform duration-300 ease-in-out mt-3 m-2'>
                         <div className='flex md:w-[800px] justify-start flex-col md:flex-row md:gap-4'>
-                            {/* Images section */}
-                            <a className='md:w-1/2 lg:w-1/2 float-left ' href='https://stackoverflowclone-henna.vercel.app/' target='_blank' rel='noopener noreferrer'>
-                                <div className='image p-1  flex h-full'>
-                                    <img className='w-1/2' src={stack1} alt='logo' />
-                                    <img className='w-1/2' src={stack2} alt='logo' />
-                                </div>
-                            </a>
-
-
+                            <div className='image p-1  gap-2  '>
+                                <Slider slides={stackImg} />
+                            </div>
 
                             {/* Content section */}
-                            <div className='mt-2 md:w-1/2'>
-                                <h3 className='font-bold text-black text-left'>Stack Overflow Clone:</h3>
-                                <p className='font-medium text-left mt-1'>
-                                    Developed and launched a high-performing Full Stack website clone of Stack Overflow, utilizing React, Node.js, and MongoDB, resulting in a seamless user experience and increased engagement by 40%.
-                                    • Technologies Used: React, Node.js, MongoDB, and Express
-                                </p>
+                            <div className='mt-2 w-90'>
+                                <a href='https://stackoverflowclone-henna.vercel.app/' target='_blank' rel='noopener noreferrer'>
+
+                                    <h3 className='font-bold text-black text-left'>Stack Overflow Clone:</h3>
+                                    <p className='font-medium bg-blend-multiply mt-1 text-justify'>
+                                        Developed and launched a high-performing Full Stack website clone of Stack Overflow, utilizing React, Node.js, and MongoDB, resulting in a seamless user experience and increased engagement by 40%.
+                                        • Technologies Used: React, Node.js, MongoDB, and Express
+                                    </p>
+                                </a>
                             </div>
                         </div>
-
                     </div>
                 </div>
-
-            </Element>
+            </Element >
             <Element name="contact" className="element">
                 <div className='bg-white w-100 h-auto flex  flex-col text-center  justify-center  ' >
                     <div class="contact__title">
@@ -150,7 +154,7 @@ function Body() {
                             </span>
                             <div className='flex-col'>
                                 <h3 className='font-black mt-2	'>Location</h3>
-                                <p className='pl-3 mt-2'>Jaiprakash Nagar - Nagpur 440001</p>
+                                <p className='pl-3 mt-2'>Civil Lines - Gondia 441601</p>
                             </div>
                         </div>
                         <div className='flex flex-col  mt-4'>
@@ -174,7 +178,7 @@ function Body() {
                     </div>
                 </div>
             </Element>
-        </div>
+        </div >
     )
 }
 
