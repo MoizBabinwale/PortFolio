@@ -42,10 +42,25 @@ function Body() {
           </div>
         </div>
       </Element>
-      <p className="text-center items-center mb-4 mt-2">
-        Hi, I'm Moiz. A passionate MERN Developer based in Gondia, Maharashtra.
-        📍
-      </p>
+      <div className="mx-auto w-1/2">
+        <p className="text-center items-center mb-1 mt-2">
+          Hi, I'm Moiz. A passionate MERN Developer based in Gondia,
+          Maharashtra. 📍
+        </p>
+        <br />
+        <p className="text-center items-center">
+          Empower your business with a compelling online presence! If your
+          business or profession needs a website, connect with me on WhatsApp at
+          <a
+            className="text-blue-600"
+            href="https://wa.me/919022124398?text=Hello%20Moiz,%20I%20am%20interested%20in%20your%20services"
+          >
+            {" "}+919022124398{" "}
+          </a>. As a freelancer, I specialize in creating effective and engaging
+          websites tailored to your unique needs.
+        </p>
+      </div>
+
       <span className="flex mb-4 flex-row font-bold text-3xl justify-center gap-4">
         <a
           href="https://github.com/MoizBabinwale"
