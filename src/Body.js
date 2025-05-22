@@ -14,6 +14,9 @@ import mechanic1 from "./assets/mechanic1.jpg";
 import mechanic2 from "./assets/mechanic2.jpg";
 import mechanic5 from "./assets/mechanic5.jpg";
 import mechanic4 from "./assets/mechanic4.jpg";
+import html from "./assets/html.png";
+import postman from "./assets/postman.png";
+import css from "./assets/css.jpeg";
 import stack1 from "./assets/stack1.PNG";
 import stack2 from "./assets/stack2.PNG";
 import { BiLogoMongodb } from "react-icons/bi";
@@ -28,70 +31,59 @@ function Body() {
   return (
     <div className="pl-4 pr-4">
       <Element name="home" className="element">
-        <div className="flex flex-col justify-center mt-28 mx-4 bg-[url('./assets/bg.jpg')] md:bg-contain bg-cover bg-fixed rounded-sm	">
-          <img
-            className="rounded-full my-7 w-52 self-center flex"
-            src={image}
-            alt="logo"
-          />
-          <div className="w-fit md:w-auto">
-            <h1 className="text-center text-5xl font-black mb-8 mt-8  md:justify-center md:text-center text-white">
-              MERN Stack Developer
-            </h1>
-            {/* <img className='h-16 w-16' src='https://www.stefantopalovic.com/static/media/waving.1bae5fcfb51082b5c2b4.png' alt='hand' /> */}
-          </div>
+        <div className="flex flex-col items-center justify-center mt-20">
+          <img src={image} alt="Your Name" className="w-32 h-48 rounded-full shadow-lg border-2 border-gray-300 object-cover" />
+          <h1 className="text-2xl font-bold mt-4 text-gray-800">Moiz Babinwale</h1>
+          <p className="text-sm text-gray-500">MERN Stack Developer</p>
         </div>
       </Element>
-      <div className="mx-auto w-1/2">
-        <p className="text-center items-center mb-1 mt-2">
-          Hi, I'm Moiz. A passionate MERN Developer based in Gondia,
-          Maharashtra. 📍
+      <div className="mx-auto w-full max-w-xl px-4">
+        <p className="text-center text-base sm:text-lg mb-2 mt-2">
+          Hi, I'm <span className="font-semibold">Moiz</span>. A passionate MERN Developer based in Nagpur, Maharashtra. 📍
         </p>
-        <br />
-        <p className="text-center items-center">
-          Empower your business with a compelling online presence! If your
-          business or profession needs a website, connect with me on WhatsApp at
+
+        <p className="text-center text-sm sm:text-base text-gray-700">
+          Empower your business with a compelling online presence! If your business or profession needs a website, connect with me on WhatsApp at
+          <a className="text-blue-600 font-medium" href="https://wa.me/919022124398?text=Hello%20Moiz,%20I%20am%20interested%20in%20your%20services">
+            {" "}
+            +919022124398{" "}
+          </a>
+          . As a freelancer, I specialize in creating effective and engaging websites tailored to your unique needs.
+        </p>
+
+        <div className="mt-4 flex justify-center">
           <a
-            className="text-blue-600"
-            href="https://wa.me/919022124398?text=Hello%20Moiz,%20I%20am%20interested%20in%20your%20services"
+            href="https://drive.google.com/drive/my-drive?zx=ebl7bnjtqd5r"
+            download
+            className="bg-cyan-600 text-white font-semibold text-sm sm:text-base px-4 sm:px-6 py-2 rounded-lg hover:bg-cyan-700 transition duration-300 mb-2 md:mb-0"
           >
-            {" "}+919022124398{" "}
-          </a>. As a freelancer, I specialize in creating effective and engaging
-          websites tailored to your unique needs.
-        </p>
+            Download Resume
+          </a>
+        </div>
       </div>
 
       <span className="flex mb-4 flex-row font-bold text-3xl justify-center gap-4">
-        <a
-          href="https://github.com/MoizBabinwale"
-          target="_blank"
-          rel="noreferrer"
-        >
-          {" "}<AiOutlineGithub />
+        <a href="https://github.com/MoizBabinwale" target="_blank" rel="noreferrer">
+          {" "}
+          <AiOutlineGithub />
         </a>
-        <a
-          href="https://www.linkedin.com/in/moiz-babinwale-its515253/"
-          target="_blank"
-          rel="noreferrer"
-        >
+        <a href="https://www.linkedin.com/in/moiz-babinwale-its515253/" target="_blank" rel="noreferrer">
           <AiOutlineLinkedin />
         </a>
       </span>
       <div className="flex flex-col mb-5 items-center justify-center ">
         <p className="mb-3 font-semibold text-xl">Tech Stack</p>
-        <diiv>
+        <div className="flex flex-wrap justify-center gap-4 mt-3">
           <ul className="flex gap-3">
-            <li>
-              <img
-                src="https://skillicons.dev/icons?i=html,css"
-                alt="skill-icon"
-              />
+            <li className="w-10 h-10 flex items-center justify-center">
+              <img src={html} alt="HTML  icon" className="max-w-full max-h-full" />
             </li>
-            <li>
-              <img
-                src="https://skillicons.dev/icons?i=js,ts"
-                alt="skill-icon"
-              />
+
+            <li className="w-10 h-10 flex items-center justify-center">
+              <img src={css} alt="Css  icon" className="max-w-full max-h-full" />
+            </li>
+            <li className="w-10 h-10 flex items-center justify-center">
+              <img src={postman} alt="postman  icon" className="max-w-full max-h-full" />
             </li>
             <li className="bg-black text-cyan-500 w-11 items-center flex justify-center p-2 rounded-lg">
               <SiTailwindcss style={{ fontSize: "1.5rem" }} />
@@ -107,181 +99,116 @@ function Body() {
             </li>
             <li />
           </ul>
-        </diiv>
+        </div>
       </div>
-      <Element name="about" className="element">
-        <div className=" flex flex-col md:flex-row md:justify-center">
-          <div className="about justify-center mt-8 mx-4">
-            <div className="relative md:w-[600px] ">
-              <img
-                className="rounded-xl my-7"
-                src="https://www.stefantopalovic.com/static/media/about-img.62b47e7f183d4b4e9feb.webp"
-                alt="logo"
-              />
-              <span className="absolute -bottom-1 -right-1 w-32 bg-white rounded-full rotate-container md:rotate-container inline-block">
-                <img
-                  className=" spinimage"
-                  src="https://www.stefantopalovic.com/static/media/text2.3d5aa6ba2d0632bb4e0572631c3f9dc2.svg"
-                  alt="text"
-                />
-              </span>
-            </div>
+      <div className="flex flex-col mb-5 items-center justify-center text-center">
+        <Element name="about" className="element">
+          <div class="contact__title">
+            <p className="font-semibold text-cyan-600 text-2xl  mt-4 mb-3">About</p>
           </div>
-          <div className=" flex flex-col text-center  justify-center  max-w-[54rem] md:items-start md:text-start">
-            <h3 className="font-semibold text-cyan-600 text-2xl  mt-4 mb-3 md:text-start ">
-              About me
-            </h3>
-            <h4 className=" text-2xl mb-3 font-bold w-100 md:text-start ">
-              A dedicated MERN Developer <br /> based in Gondia, Maharashtra 📍
-            </h4>
-            <p className="font-light  text-[#767676] self-center w-96  md:text-start">
-              As a Junior Full Stack Developer, I possess an impressive arsenal
-              of skills in HTML, CSS, JavaScript, React, and Tailwind. I excel
-              in designing and maintaining responsive websites that offer a
-              smooth user experience. My expertise lies in crafting dynamic,
-              engaging interfaces through writing clean and optimized code and
-              utilizing cutting-edge development tools and techniques. I am also
-              a team player who thrives in collaborating with cross-functional
-              teams to produce outstanding web applications.
+          <h4 className="text-2xl mb-3 font-bold w-full text-center md:text-start">MERN Stack Developer with 1+ Year of Professional Experience 📍</h4>
+          <div className="flex justify-center">
+            <p className="text-[#767676] w-[90%] max-w-xl text-center md:text-start">
+              I'm a dedicated MERN developer with 14 months of experience in React.js and full-stack development. At <b>Pranam Creative Solutions</b>, I honed my frontend skills in React, while at{" "}
+              <b>OLINEO Digital India</b>, I built full-stack applications and optimized performance across the MERN stack. My focus lies in building scalable, secure, and responsive web applications
+              using technologies like MongoDB, Express, React, Node.js, and Tailwind CSS.
             </p>
           </div>
-        </div>
-      </Element>
+        </Element>
+      </div>
+
       <Element name="project" className="element">
-        <div className="flex flex-col text-center  justify-center text-side max-w-[54rem] md:text-center md:max-w-none    md:justify-center">
-          <p className=" font-semibold text-cyan-600 text-2xl  mt-4 mb-3 ">
-            portfolio
-          </p>
-          <h3 className="  mb-3  font-bold w-100 text-4xl ">
-            Each project is a unique piece of development 🧩
-          </h3>
-          <div className="card p-2 w-fit border-none   shadow-xl self-center hover:-translate-y-2 transition-transform duration-300 ease-in-out mt-3 m-2">
-            <div className="flex md:w-fit justify-start flex-col md:flex-row md:gap-4 md:rounded-md">
-              <div className="image p-1  gap-2  ">
-                <Slider slides={medicineImg} />
-              </div>
-              <div className="mt-2 w-90">
-                <h3 className="font-bold text-black text-left">
-                  {" "}Medicine Prescription Management System:{" "}
-                </h3>
-                <p className="font-medium mt-1 text-justify">
-                  {" "}This dynamic web application empowers administrators to
-                  seamlessly add medicines along with associated symptoms. The
-                  user-friendly interface facilitates efficient prescription
-                  management, streamlining the process for healthcare
-                  professionals. The responsive design ensures accessibility
-                  across various devices, providing a modern solution for
-                  medicine administration and record-keeping
-                </p>
-                <div className="text-start mt-3 ">
-                  <p className="w-full">
-                    <b>#&nbsp;Tech Use:</b>
-                  </p>
-                  <div className="pl-10 mt-3">
-                    <ul className="list-disc	space-y-2">
-                      <li>React</li>
-                      <li>Java</li>
-                      <li>SpringBoot</li>
-                      <li>Material UI</li>
-                      <li>JavaScript</li>
-                      <li>HTML/CSS</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
+        <div className="flex flex-col justify-center items-center ">
+          <div class="contact__title">
+            <p className="font-semibold text-cyan-600 text-2xl  mt-4 mb-3">Projects</p>
           </div>
-          <div className="card p-2 w-fit border-none   shadow-xl self-center hover:-translate-y-2 transition-transform duration-300 ease-in-out mt-3 m-2">
-            <div className="flex md:w-fit justify-start flex-col md:flex-row md:gap-4 md:rounded-md">
-              <div className="image p-1  gap-2  ">
-                <Slider slides={mechanicImg} />
-              </div>
-              <div className="mt-2 w-90">
-                <h3 className="font-bold text-black text-left">
-                  Mechanic Shop Directory:{" "}
-                </h3>
-                <p className="font-medium mt-1 text-justify">
-                  {" "}In this clone, users can explore mechanic shop details,
-                  including contact information, and effortlessly reach out to
-                  mechanics for services. On the mechanic side, the platform
-                  allows easy registration of different shop branches, providing
-                  a comprehensive directory for users seeking automotive
-                  services. The responsive design ensures optimal user
-                  experience, making it a reliable and accessible solution for
-                  connecting users with automotive professionals.
-                </p>
-                <div className="text-start mt-3 ">
-                  <p className="w-full">
-                    <b>#&nbsp;Tech Use:</b>
-                  </p>
-                  <div className="pl-10 mt-3">
-                    <ul className="list-disc	space-y-2">
-                      <li>React</li>
-                      <li>Java</li>
-                      <li>SpringBoot</li>
-                      <li>Bootstrap (Library)</li>
-                      <li>JavaScript</li>
-                      <li>HTML/CSS</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="card p-2 w-fit border-none   shadow-xl self-center hover:-translate-y-2 transition-transform duration-300 ease-in-out mt-3 m-2">
-            <div className="flex md:w-fit justify-start flex-col md:flex-row md:gap-4 md:rounded-md">
-              <div className="image p-1  gap-2  ">
+          {/* Project Card 1 */}
+          <div className="card p-4 w-full max-w-4xl   shadow-xl self-center hover:-translate-y-2 transition-transform duration-300 ease-in-out mt-6 m-2 bg-white rounded-lg">
+            <div className="flex flex-col md:flex-row gap-4">
+              <div className="w-full md:w-1/2">
                 <Slider slides={stackImg} />
               </div>
-
-              {/* Content section */}
-              <div className="mt-2 w-90">
-                <a
-                  href="https://stackoverflowclone-henna.vercel.app/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <h3 className="font-bold text-black text-left">
-                    Stack Overflow Clone:
-                  </h3>
-                  <p className="font-medium bg-blend-multiply mt-1 text-justify">
-                    Developed and launched a high-performing Full Stack website
-                    clone of Stack Overflow, utilizing React, Node.js, and
-                    MongoDB, resulting in a seamless user experience and
-                    increased engagement by 40%. • Technologies Used: React,
-                    Node.js, MongoDB, and Express
+              <div className="flex flex-col justify-between w-full md:w-1/2">
+                <div>
+                  <h3 className="text-2xl font-bold text-black mb-2">Stack Overflow Clone</h3>
+                  <p className="font-medium text-gray-700 text-justify">
+                    A full-stack replica of Stack Overflow, featuring user authentication, posting, voting, and search functionality with a clean modern UI.
                   </p>
-                  <div className="text-start mt-3 ">
-                    <p className="w-full">
-                      <b>#&nbsp;Tech Use:</b>
+                  <p className="text-sm mt-2 font-semibold text-cyan-600">
+                    💼 Role: Full Stack Developer – Created the entire MERN stack solution with authentication, API development, and deployment on Vercel.
+                  </p>
+                  <div className="mt-3">
+                    <p className="mt-3 text-sm">
+                      <b># Tech Used:</b> React, Spring Boot, Java, Material UI, HTML/CSS
                     </p>
-                    <div className="pl-10 mt-3">
-                      <ul className="list-disc	space-y-2">
-                        <li>React</li>
-                        <li>Nodejs</li>
-                        <li>MongoDB</li>
-                        <li>Express JS</li>
-                        <li>Tailwind CSS</li>
-                        <li>JavaScript</li>
-                        <li>HTML/CSS</li>
-                      </ul>
-                    </div>
                   </div>
-                </a>
+                </div>
+                <div className="flex gap-4 mt-4">
+                  <a href="https://stackoverflowclone-henna.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-white bg-blue-600 px-3 py-1 rounded-md text-sm hover:bg-blue-700">
+                    🔗 Live Demo
+                  </a>
+                  <a href="https://github.com/MoizBabinwale/Client" target="_blank" rel="noopener noreferrer" className="text-white bg-gray-800 px-3 py-1 rounded-md text-sm hover:bg-gray-900">
+                    💻 GitHub
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Project Card 2 */}
+          <div className="card p-4 w-full max-w-4xl   shadow-xl self-center hover:-translate-y-2 transition-transform duration-300 ease-in-out mt-6 m-2 bg-white rounded-lg">
+            <div className="flex flex-col md:flex-row gap-4">
+              <div className="w-full md:w-1/2">
+                <Slider slides={mechanicImg} />
+              </div>
+              <div className="flex flex-col justify-between w-full md:w-1/2">
+                <div>
+                  <h3 className="text-2xl font-bold text-black mb-2">Mechanic Shop Directory</h3>
+                  <p className="font-medium text-gray-700 text-justify">
+                    A responsive directory platform where users can explore mechanic shop details and contact them, while shop owners register multiple branches with ease.
+                  </p>
+                  <p className="text-sm mt-2 font-semibold text-cyan-600">💼 Role: Frontend Developer – Designed user and admin dashboards using React and styled with Bootstrap.</p>
+                  <div className="mt-3">
+                    <p className="mt-3 text-sm">
+                      <b># Tech Used:</b> React, Spring Boot, Java, Material UI, HTML/CSS
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Project Card 3 */}
+          <div className="card p-4 w-full max-w-4xl   shadow-xl self-center hover:-translate-y-2 transition-transform duration-300 ease-in-out mt-6 m-2 bg-white rounded-lg">
+            <div className="flex flex-col md:flex-row gap-4">
+              <div className="w-full md:w-1/2">
+                <Slider slides={medicineImg} />
+              </div>
+              <div className="flex flex-col justify-between w-full md:w-1/2">
+                <div>
+                  <h3 className="text-2xl font-bold text-black mb-2">Medicine Prescription Management System</h3>
+                  <p className="font-medium text-gray-700 text-justify">
+                    A web app to add and manage medicine records linked with symptoms. The system streamlines prescription processes for healthcare professionals, with a clean UI and mobile-friendly
+                    design.
+                  </p>
+                  <p className="text-sm mt-2 font-semibold text-cyan-600">💼 Role: Full Stack Developer – Built and integrated both frontend UI and backend services using Java and Spring Boot.</p>
+                  <div className="mt-3">
+                    <p className="mt-3 text-sm">
+                      <b># Tech Used:</b> React, Spring Boot, Java, Material UI, HTML/CSS
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </Element>
+
       <Element name="contact" className="element">
         <div className="bg-white w-100 h-auto flex  flex-col text-center  justify-center  ">
           <div class="contact__title">
-            <p className="font-semibold text-cyan-600 text-2xl  mt-4 mb-3">
-              contact
-            </p>
-            <h3 className=" mb-3  font-extrabold w-100 text-3xl ">
-              Don't be shy! Hit me up! 👇
-            </h3>
+            <p className="font-semibold text-cyan-600 text-2xl  mt-4 mb-3">contact</p>
+            <h3 className=" mb-3  font-extrabold w-100 text-3xl ">Don't be shy! Hit me up! 👇</h3>
           </div>
           <div className="footer align-middle items-center w-100 p-3   md:flex md:flex-row md:gap-16 justify-center">
             <div className="flex flex-col  justify-center mt-2">
@@ -290,7 +217,7 @@ function Body() {
               </span>
               <div className="flex-col">
                 <h3 className="font-black mt-2	">Location</h3>
-                <p className="pl-3 mt-2">Civil Lines - Gondia 441601</p>
+                <p className="pl-3 mt-2">Mankapur - Nagpur 440001</p>
               </div>
             </div>
             <div className="flex flex-col  mt-4">
@@ -309,9 +236,7 @@ function Body() {
               <div className="flex-col">
                 <h3 className="font-black mt-2	">Email</h3>
                 <p className="pl-3">
-                  <a href="href=&quot;mailto:mbabinwale@gmail.com?subject=Trying%To%connect">
-                    mbabinwale@gmail.com
-                  </a>
+                  <a href="mailto:mbabinwale@gmail.com?subject=Trying%20to%20connect">mbabinwale@gmail.com</a>
                 </p>
               </div>
             </div>
